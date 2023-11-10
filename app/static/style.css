@@ -1,0 +1,176 @@
+html{
+    font-family: 'Rufina', sans-serif;
+}
+
+body{
+    background-color: #efefef;
+    margin: 0;
+    /*Color de lo que escribamos*/
+    color: #034d6c;
+}
+
+a{
+    transition: color 0.3s ease;
+    font-family: 'Rubik', sans-serif;
+    color:#034d6c;
+    text-decoration: none;
+    font-weight: 700;
+}
+a:hover{
+    color: #f84f07;
+}
+
+html body header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 3px 0 5px #aaa;
+    padding: 15px 30px;
+    position: relative;
+    z-index: 2;
+}
+header .logo{
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+html body nav ul{
+    list-style-type: none;
+    font-size: 16px;
+}
+
+html body nav ul li{
+    display: inline-block;
+}
+
+html body nav ul li a{
+    padding: 0 15px;
+}
+.hero{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    background-color: #fff;
+    padding: 20px 50px;
+    justify-content: center;
+}
+
+.hero-content{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero h1{
+    font-family: 'Rufina', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.hero p{
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 50px;
+}
+
+.left{
+    width: 600px;
+    align-self: center;
+}
+
+.btn{
+    background-color: #f84f07;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px #ddd;
+}
+
+a.btn{
+    color: #fff;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 1200px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.orange{
+    color: #f84f07;
+}
+
+.padded{
+    padding: 20px 30px;
+}
+
+.vert-pad{
+    padding: 20px 0;
+}
+
+.card{
+    background-color: #fff;
+    box-shadow: 0 1px 2px #ddd;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+.third{
+    width: 280px;
+    margin: 20px;
+}
+
+/* FORMULARIO */
+form input {
+    font-family: 'Rubik', sans-serif;
+    border: 0;
+    height: 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    box-shadow: 0px 1px 5px #ddd;
+    /* outline: none; para quitar la linea de fuera cuando selecciona el campo */
+    width: 400px;
+    display: block;
+}
+
+textarea{
+    font-family: 'Rubik', sans-serif;
+    border: 0;
+    height: 150px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    box-shadow: 0px 1px 5px #ddd;
+    resize: none;
+    width: 400px;
+    display: block;
+    outline: none;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+form label{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+form input{
+    cursor: pointer; 
+}
+.full-width{
+    width: 100%;
+}
+
+.footer{
+    padding: 80px 0 0 0;
+    background-color: #333;
+    color: #fff;
+}
