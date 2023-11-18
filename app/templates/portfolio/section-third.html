@@ -5,7 +5,7 @@
                 <h1>¡Contáctame!</h1>
                 <p>Si tienes alguna sugerencia, duda u oferta... No lo dudes</p>
             </div>
-            <div id="contacto" class="right padded">
+            <div id="contacto" class="right padded"> 
                 <form class="contact-form" method="post" action="{{ url_for('portfolio.mail') }}">
                     <div class="form-group">
                         <!-- <label>Nombre</label> -->
@@ -21,6 +21,27 @@
                     </div>
                     <button class="btn full-width">Enviar</button>
                 </form>
+            </div>
+        </div>
+        <div class="row vert-pad">
+            <div class="left padded">
+                <img src="{{url_for('static', filename='grow.png')}}" width=550px alt="">
+            </div>
+            <div class="right padded grow">
+                
+                <h1>¡Aún queda mucho por aprender!</h1>
+                <p>Soy un apasionado de la técnologia, siempre al tanto de novedades.</p>
+                <p>¡Siempre se puede aprender algo nuevo!</p>
+                <br>
+                <h3>Mejorando mi stack técnologico</h3>
+                <p>Estando al tanto de las ultimas noticias, puedo mantener actualizado mi stack.</p>
+                <!-- <code>
+                    function saludar() { <br>
+                        console.log("¡Hola, mundo!");<br>
+                    }
+                    <br>
+                    saludar();
+                </code> -->
             </div>
         </div>
         
