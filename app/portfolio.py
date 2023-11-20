@@ -3,8 +3,8 @@ from flask import(
 )
 import sendgrid
 from sendgrid.helpers.mail import *
-
 import ssl
+# import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 

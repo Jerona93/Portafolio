@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<title>{% block title %} {% endblock %} - Portafolio</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Rubik:wght@400;700&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+<head>
+    <title>{% block title %} {% endblock %} - Portafolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Rubik:wght@400;700&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static',filename='favicon.ico') }}" type="image/x-icon" sizes="32x32">
+</head>
 
 
 <body>
@@ -15,7 +18,8 @@
         <nav>
             <ul>
                 <li><a href="{{ url_for('portfolio.index') }}">Inicio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <!-- <li><a href="#contacto">Contacto</a></li> -->
+                <li><a href="{{ url_for('portfolio.index') }}#contacto">Contacto</a></li>
 
             </ul>
         </nav>
