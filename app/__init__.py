@@ -1,10 +1,17 @@
 import os #para las variables de entorno y apis
 
 from flask import Flask
+from flask_frozen import Freezer
+
+
 
 def create_app():
     app = Flask(__name__)
-    
+
+    freezer = Freezer(app)
+    if __name__ == '__main__':
+        freezer.freeze()
+
     app.config.from_mapping(
         # FROM_EMAIL=os.environ.get('FROM_EMAIL'),
         # MAILJET_API_KEY=os.environ.get('MAILJET_API_KEY'),
