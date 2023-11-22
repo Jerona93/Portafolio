@@ -7,6 +7,7 @@ body{
     margin: 0;
     /*Color de lo que escribamos*/
     color: #034d6c;
+    overflow-x: hidden;
 }
 
 a{
@@ -121,7 +122,7 @@ a.btn{
 }
 
 .vert-pad{
-    padding: 20px 0;
+    padding: 20px 60px;
 }
 
 .card{
@@ -342,5 +343,9 @@ form input{
         width:30px;
         
     }
+    .phone{
+        padding-top: 20%;
+    }
 /* Otros ajustes específicos para tamaños de pantalla más pequeños */
 }
+
