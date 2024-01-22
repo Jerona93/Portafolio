@@ -10,6 +10,53 @@ body{
     overflow-x: hidden;
 }
 
+    /* Estilos para el tema claro */
+/* styles.css */
+/* styles.css */
+#cambiar-tema-btn {
+    /* Estilos comunes para el botón */
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#icono-tema {
+    font-size: 24px;
+    color: #333; /* Color del ícono */
+}
+
+body.tema-claro header{
+    transition: background-color 1.0s ease; 
+    background-color: #fff;
+    color: #034d6c;
+}
+
+body.tema-oscuro header{
+    transition: background-color 1.0s ease;
+    background-color: #232323;
+    color: #fff; 
+} 
+body.tema-claro {
+    transition: background-color 1.0s ease; 
+    background-color: #fff;
+    color: #034d6c;
+}
+body.tema-oscuro {
+    transition: background-color 1.0s ease;
+    background-color: #232323;
+    color: #fff; 
+} 
+body.tema-claro .white-bg {
+    transition: background-color 1.0s ease;
+    /* background-color: #ffffff; */
+    color: #034d6c;
+}
+body.tema-oscuro .white-bg {
+    transition: background-color 1.0s ease;
+    background-color: #333;
+    color: #7eb6ce;
+}
+
 a{
     transition: color 0.3s ease;
     font-family: 'Rubik', sans-serif;
@@ -54,10 +101,20 @@ html body nav ul li a{
     position: relative;
     z-index: 1;
     display: flex;
+    /* background-color: #ef1818; */
     background-color: #fff;
     padding: 20px 50px;
     justify-content: center;
     padding-bottom: 50px;
+}
+body.tema-claro .hero {
+    /* background-color: #ffffff; */
+    color: #034d6c;
+}
+
+body.tema-oscuro .hero {
+    background-color: #333;
+    color: #7eb6ce;
 }
 
 .hero-content{
